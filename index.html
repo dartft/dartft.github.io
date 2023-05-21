@@ -4,49 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Again</title>
+    <title>Box</title>
 </head>
 <style>
-    #p {
-       
-        text-align: center;
-        color:darkblue;
+    *{
+        background-color: aquamarine;
     }
-    .box{
-      background-color: aquamarine;
-    
-     border-left-color: rgb(75, 151, 151);
-    border-left-width:20px;
-     border-style: solid;
-     border-top-width: 0px;
-     border-bottom-width: 0px;
-     border-right-width: 0px;
-     text-align: center;
-     width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-    
-    
+    #square{
+        border-color: aqua;
+        background-color: aquamarine;
+        padding: 50px;
+        height: 105px;
+        margin:50px;
+        box-shadow: 4px 1px 15px 0px rgb(83, 82, 82) inset;
+        border-radius: 110px 210px;
     }
-    .input{
-        border-radius: 10px;
+    span{
+        position:absolute;
     }
-    #wait{
-        text-align: center;
+    label:hover{
+        color: rgb(49, 105, 154);
     }
-    
 </style>
 <body>
-    <p id = "p">
-        hello Html Css ::
-    </p>
-   <div id = "wait"><input type="text" style="height: 20px; color: red;" class="input"> <input type="button" size="30" value="提交" style="vertical-align:middle;" ></div>
-    
-    <div class="box" style="height: 100px;width: 100px;  border-radius: 5px; box-shadow: 4px; text-align: center;" >Test Box</div>
+    <div id="square">
+         <label>Click me <input type="text">
+         </br>
+         <label>Password<input type="password">
+        </label>
+    </div>
 </body>
 </html>
