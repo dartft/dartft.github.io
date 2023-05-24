@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Again</title>
+    <title>Box</title>
 </head>
 <style>
-    #p {
-       
+    *{
+        background-color: aquamarine;
+    }
+    #square{
+        border-color: black;
+        background-color: aquamarine;
+        height: 100px;
+        width: 100px;
+        box-shadow: 16px 17px 10px 8px rgb(83, 82, 82) inset ,0px -0.1px 10px 2px rgb(83, 82, 82) inset;
+        border-radius: 15%;
+        padding: 4em;
         text-align: center;
-        color:darkblue;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
-    .box{
-      background-color: aquamarine;
-    
-     border-left-color: rgb(75, 151, 151);
-    border-left-width:20px;
-     border-style: solid;
-     border-top-width: 0px;
-     border-bottom-width: 0px;
-     border-right-width: 0px;
-     text-align: center;
-     width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-    
-    
+    button{
+        /* display: none; */
+        height: 100px;
+        width: 100px;
+        background-color: rgba(206, 200, 200, 0.675);
+        border-radius: 40px;
+        color: rgb(174, 174, 174);
+        border-style: none;
+        box-shadow: 15px 15px 50px 5px grey,-10px -10px 50px 5px rgba(186, 185, 185, 0.285);
+        position: absolute;
+        top: 28%;
+        left: 29%;
+        margin: 0%;
     }
-    .input{
-        border-radius: 10px;
+    p{
+        position: absolute;
+        left: 80px;
+        top: 90px;
+        color: burlywood;
     }
-    #wait{
-        text-align: center;
+    div button:active{
+        display: none;
     }
-    
 </style>
 <body>
-    <p id = "p">
-        hello css++
-    </p>
-    <div id = "wait"><input type="text" style="height: 20px; color: red;" class="input"> <input type="button" size="30" value="提交" style="vertical-align:middle;" ></div>
-    
-    <div class="box" style="height: 100px;width: 100px;  border-radius: 5px; box-shadow: 4px; text-align: center;" >Test Box</div>
+    <div id="square">
+        <p>Hello CSS</p>
+        <div style="width: 100%; height: 100%;"> <button>Click me</button></div>
+    </div>
 </body>
 </html>
